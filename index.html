@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        html{
+        width: 100% ;
+        height: 100% ;
+        background: url(4.jpg)  no-repeat  center  bottom ;      
+        -webkit-background-size: cover ;
+        background-size: cover ;
+        background-attachment: fixed;
+        }
+        #header{
+        height: 100px;
+        background-color: greenyellow;
+        }
+        #navigate{
+          width: 100%;
+          height: 50px;
+          background-color: burlywood;
+        }
+        #wrapper{
+        position: relative;
+        width:100%;
+        }
+        ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        }
+        .menu {
+        font-family: '標楷體';
+        font-size: 20px;
+        }
+        .menu > li {
+        float: left;
+        }
+        .menu li {
+        position: relative;
+        padding: 0px;
+        border: lightblue 1px dashed;
+        min-width: 120px;
+        }
+        .menu ul {
+        position: absolute;
+        z-index: 10;
+        top: 100%;
+        display:none;
+        }
+        .menu ul li > ul{ 
+        z-index: 20;
+        top: 5%;
+        left: 95%;
+        }
+        .menu a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        background-image: url(https://images.freeimages.com/images/premium/previews/2634/26343871-previous-button-icon-drawing.jpg);
+        background-size: contain;
+        color: black;
+        }
+      .menu a:hover {
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXn25B_GcL0-Ctmp-0ldvpfhpHyc5V8jLzzjCP_IDi9nwhqjVq1CDqaLsQGnEExrfW6Ks&usqp=CAU);
+        background-size: contain;
+        color: orangered;
+        }
+      .menu li:hover > ul {
+        display: block;
+        }
+      #para1{
+      font-size: 50px;
+      text-align:center;
+	    color: brown;
+      } 
+      #para{
+      font-size: 30px;
+      text-align: center;
+	    color: brown;
+      position: relative;
+    }
+    #fixed{
+      position: fixed;
+      right: 0px;
+      bottom:500px;
+    }
+    #img1{
+      position: fixed;
+      right: 0px;
+      bottom:560px;
+    }
+    #side{
+      float:left;
+      width:300px;
+      margin: left 60px;;
+    }
+    .sideimg{
+      margin-bottom: 30px;
+    }
+    #title1{
+        font-size: 50px;
+        animation: change 10s linear 0s infinite;
+    }
+    @keyframes change {
+    0% {color: rgb(221, 25, 146);}
+    10% {color: rgb(55, 197, 202)}
+    20% {color: rgb(61, 21, 66)}
+    50% {color: rgb(10, 231, 77)}
+    50% {color: rgb(102, 106, 107)}    
+    50% {color: rgb(132, 36, 161)}
+    50% {color: rgb(201, 132, 132)}
+    50% {color: rgb(74, 138, 66)}
+    50% {color: rgb(44, 16, 206)}
+    50% {color: rgb(236, 236, 12)}
+    50% {color: rgb(236, 180, 24)}
+    100% {color: rgb(76, 34, 194);}
+
+    }
+    .footer {
+        position: relative;
+        opacity: 0.8;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 15px 0;
+    }
+    table{
+      border:"5px";
+      border-style: dashed;
+      border-width: 3px;
+    }
+    td{
+      border: 1px solid rgb(160 160 160);
+    }
+    
+ 
+    </style>  
+</head>
+<body>
+    <div id="header"><marquee direction="right" height="200px" scrollamount="10" behavior="alternate" style="position: relative;" ><h1 id="title1"><b>自我介紹</b></h1></marquee></div>
+    <div id="navigate">
+      <ul class="menu">
+        <li><a>社群軟體</a>
+          <ul>
+            <li><a href="https://www.facebook.com/profile.php?id=100005852194829"target="block"><b>FaceBook</b></a></li>
+            <li><a href="https://www.instagram.com/willie123486/"target="block"><b>Instagram</b></a></li>
+          </ul>
+        </li>
+        <li><a>喜歡的Youtuber</a>
+          <ul>
+            <li><a href="https://www.youtube.com/channel/UCXOBLGJdYA1mfhOrDwQESTg"target="block"><b>史丹利</b></a></li>
+            <li><a href="https://www.youtube.com/c/Dinterlolz"target="block"><b>Dinter</b></a></li>
+          </ul>
+        </li>
+        <li><a>喜歡的歌</a>
+          <ul>
+            <li><a>中文</a>
+              <ul>
+                <li><a href="https://www.youtube.com/watch?v=3_GFxZ9xA7o"target="block"><b>美秀集團-擋一根</b></a></li>
+                <li><a href="https://www.youtube.com/watch?v=O66EpbcFIFY"target="block"><b>五佰-199玫瑰</b></a></li>
+                <li><a href="https://www.youtube.com/watch?v=ipPXM0p5YlA"target="block"><b>王以太-阿斯匹林</b></a></li>
+                <li><a href="https://www.youtube.com/watch?v=qIZ5MAwbeCg"target="block"><b>周杰倫-止戰之殤</b></a></li>
+              </ul>
+            </li>
+            <li><a>日文</a>
+              <ul>
+                <li><a href="https://www.youtube.com/watch?v=x8VYWazR5mE"target="block"><b>YOASOBI-夜に駆ける</b></a></li>
+                <li><a href="https://www.youtube.com/watch?v=MquT2X5NEY8"target="block"><b>YOASOBI-ツバメ</b></a></li>
+              </ul>
+            </li>
+            <li><a>英文</a>
+              <ul>
+                <li><a href="https://www.youtube.com/watch?v=RBumgq5yVrA"target="block"><b>Passenger-Let her go</b></a></li>
+                <li><a href="https://www.youtube.com/watch?v=7mrE9P3SDmU"target="block"><b>Linkin Park-One more light </b></a></li>
+              </ul>
+            </li>
+            
+          </ul>
+        </li>
+     </ul>
+    </div>
+    <div id="side">
+      <img class="sideimg" src="5.jpg"width="275px"/>             
+      <img class="sideimg" src="6.jpg"width="275px"/>
+      <img class="sideimg" src="7.jpg"width="275px"/>
+      <img class="sideimg" src="1.jpg"width="275px" />
+    </div>
+    <div id="wrapper">
+        <div id="main">
+          <center>
+            <div>
+              <table>
+                <tr>
+                  <td colspan="3"><p id="para1">個人履歷</p></td>
+                </tr>
+                <tr>
+                  <td><p id="para">姓名:陳韋良</p></td>
+                  <td><p id="para">英文名字:Biang</p></td>
+                  <td rowspan="2"><img src="dash.jpg"width="300px"/></td>
+                </tr>
+                <tr>
+                  <td><p id="para">興趣:打桌球,羽球</p></td>
+                  <td><p id="para">專業能力:python, html</p></td>
+
+                </tr>
+                <tr>
+                  <td colspan="3"><p id="para">經歷:參加ncpc決賽、CPE4題、個人網頁製作</p></td>
+                </tr>
+                <tr>
+                  <td colspan="3"><p id="para">喜歡的動畫人物:派大星</p></td>
+                  
+                  
+                </tr>
+              </table>
+          </div>
+
+          </center>
+          <center>
+            <video controls autoplay>
+              <source src="videoplayback.mp4" type="video/mp4;">
+              你的瀏覽器不支援 video tag!
+            </video>
+          </center>
+        </div>
+    </div>
+    <div id="fixed">
+      <img id="img1" src="1.jpg"width="100px"/>
+      <audio controls autoplay loop>
+        <source src="Spongebob Squarepants - Goofy Goober Rock (Video).mp3" type="audio/mpeg">
+        你的瀏覽器不支援 audio tag!
+      </audio>
+    </div>
+    <div class="footer">
+      <p>聯絡方式(電子郵件):11011216@gm.nttu.edu.tw</p>
+  </div>
+    
+ 
+</body>
+</html>
